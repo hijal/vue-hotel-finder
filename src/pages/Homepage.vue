@@ -5,17 +5,20 @@
 			:isUSD="isUSD"
 			:isBDT="isBDT"
 		></the-header>
+		<search-box></search-box>
 	</div>
 </template>
 
 <script>
 import TheHeader from '../components/TheHeader.vue';
+import SearchBox from '../components/SearchBox.vue';
 import headerMixins from '../mixins/headerMixins.js';
 
 export default {
 	name: 'Homepage',
 	components: {
 		TheHeader,
+		SearchBox,
 	},
 	mixins: [headerMixins],
 };
